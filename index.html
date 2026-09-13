@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mahi Sinha — Computer Science Engineer</title>
+<meta name="description" content="Portfolio of Mahi Sinha, Computer Science student building full-stack web applications and applied ML systems." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="dark">
+
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <a href="#top" class="nav__mark">MS<span class="nav__mark-dot">.</span></a>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#writing">Writing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+      </button>
+    </div>
+    <button id="navBurger" class="nav__burger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="top" class="hero">
+    <div class="hero__left">
+      <p class="hero__eyebrow">Computer science · final stretch of B.Tech</p>
+      <h1 class="hero__title">Mahi Sinha builds systems that hold up under real use — <span class="hero__title-accent">web, and the ML behind it.</span></h1>
+      <p class="hero__sub">Full-stack developer and applied-ML enthusiast at Bihar Engineering University, currently in my 6th semester.</p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">See my projects</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+      <div class="hero__links">
+        <a href="https://github.com/Mahisinha" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/mahisinha" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:sinhamahi14092005@gmail.com">Email</a>
+      </div>
+    </div>
+
+    <div class="hero__right">
+      <div class="terminal" id="terminal">
+        <div class="terminal__bar">
+          <div class="terminal__dots"><span></span><span></span><span></span></div>
+          <span class="terminal__title">mahi@portfolio — zsh</span>
+        </div>
+        <div class="terminal__body" id="terminalBody">
+          <p class="t-line">Welcome. This terminal actually works — try a command.</p>
+          <p class="t-line">Type <span class="t-cmd">help</span> to see what's available.</p>
+          <div class="t-row"><span class="t-prompt">mahi@portfolio:~$</span><input id="terminalInput" class="t-input" type="text" autocomplete="off" spellcheck="false" aria-label="Terminal input" /></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STAT STRIP ===== -->
+  <section class="stats">
+    <div class="stat">
+      <span class="stat__num">9.0</span>
+      <span class="stat__label">CGPA, 6th semester</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num">GATE</span>
+      <span class="stat__label">Qualified — CSE</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num">3</span>
+      <span class="stat__label">Internships completed</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num">2027</span>
+      <span class="stat__label">Expected graduation</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about">
+    <div class="section-head">
+      <h2>About</h2>
+    </div>
+    <div class="about__grid">
+      <p class="about__lead">I'm a Computer Science student at Purnea College of Engineering, currently in my sixth semester. I work mainly in the MERN stack, with a growing focus on applied machine learning — mostly NLP problems where I get to combine both sides of what I study.</p>
+      <p>Being my college's Training &amp; Placement Coordinator has shaped how I think about my own portfolio: I've sat in on the process recruiters use to filter candidates, which is part of why this site favors substance you can scan quickly over decoration. I care about whether something actually works, whether that's a detection model or a page layout.</p>
+    </div>
+
+    <div class="skills">
+      <div class="skills__group">
+        <h3>Languages</h3>
+        <p>C · C++ · Python · JavaScript · TypeScript · Java</p>
+      </div>
+      <div class="skills__group">
+        <h3>Frameworks</h3>
+        <p>React.js · Node.js · Express.js</p>
+      </div>
+      <div class="skills__group">
+        <h3>Databases</h3>
+        <p>MongoDB</p>
+      </div>
+      <div class="skills__group">
+        <h3>AI / ML</h3>
+        <p>Machine Learning · NLP · Gemini API</p>
+      </div>
+      <div class="skills__group">
+        <h3>Tools</h3>
+        <p>Git · GitHub · VS Code · IoT (iHUB Divya Sampark)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="experience">
+    <div class="section-head">
+      <h2>Experience</h2>
+      <p>Three internships, each pointed at a different part of the stack.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__meta">
+            <h3>NPTEL Intern — IIT Ropar</h3>
+            <span>MERN Stack Development · 2.5 months</span>
+          </div>
+          <p>Built full-stack web applications with a team using React, Node.js, Express, and MongoDB. This is where Vi-Notes started, an academic-integrity detection tool I helped build during the internship, and where I received the Golden Ticket, awarded to 3 students across the cohort.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__meta">
+            <h3>Full Stack Intern — Internshala</h3>
+            <span>Full Stack Web Development · 2 months</span>
+          </div>
+          <p>Developed and deployed full-stack applications end to end — React on the front end, Node/Express on the back — covering the full path from local build to a live deployment.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__meta">
+            <h3>AI Foundations Intern — Edunet Foundation</h3>
+            <span>Foundation of Artificial Intelligence · 1 month</span>
+          </div>
+          <p>Built foundational grounding in AI/ML concepts, data preprocessing, and model training — the base that later fed directly into the cyberbullying-detection project below.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="projects">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <p>Three I'd actually want to walk you through in an interview.</p>
+    </div>
+
+    <div class="project" id="proj-vinotes">
+      <div class="project__index">01</div>
+      <div class="project__body">
+        <div class="project__top">
+          <h3>Vi-Notes</h3>
+          <span class="project__tag">Academic integrity detection</span>
+        </div>
+        <p class="project__problem"><strong>The problem:</strong> instructors have no easy way to tell whether a submitted piece of writing was actually typed by the student or pasted in from somewhere else, AI included.</p>
+        <p class="project__approach"><strong>What I built:</strong> as part of a team during the IIT Ropar NPTEL internship, I worked on a tool that tracks behavioural signals during writing — paste count, words-per-minute — and turns them into an authenticity score per submission. Session history is stored so instructors can review and flag suspicious submissions later rather than only at the moment of submission.</p>
+        <p class="project__stack"><strong>Stack:</strong> React, Node.js, Express, MongoDB, TypeScript</p>
+        <a href="https://github.com/Mahisinha" target="_blank" rel="noopener" class="project__link">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="project" id="proj-cyberbullying">
+      <div class="project__index">02</div>
+      <div class="project__body">
+        <div class="project__top">
+          <h3>Cyberbullying Detection System</h3>
+          <span class="project__tag">NLP classifier</span>
+        </div>
+        <p class="project__problem"><strong>The problem:</strong> moderating chat or message content for hate speech and bullying at any scale means you can't rely on manual review alone.</p>
+        <p class="project__approach"><strong>What I built:</strong> an NLP-based classifier that takes a message or chat excerpt and predicts whether it constitutes hate speech or cyberbullying. I handled text preprocessing and trained and evaluated the model against labelled datasets, iterating on preprocessing choices to improve classification quality.</p>
+        <p class="project__stack"><strong>Stack:</strong> Python, NLP, Machine Learning</p>
+        <a href="https://github.com/Mahisinha" target="_blank" rel="noopener" class="project__link">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="project" id="proj-college">
+      <div class="project__index">03</div>
+      <div class="project__body">
+        <div class="project__top">
+          <h3>College Web Prototype</h3>
+          <span class="project__tag">Full-stack UI/UX</span>
+        </div>
+        <p class="project__problem"><strong>The problem:</strong> I wanted a project that was entirely my own design decisions end to end, not a clone of something existing.</p>
+        <p class="project__approach"><strong>What I built:</strong> a complete college website prototype designed from scratch — original layout, navigation, and content structure, not a copy of my own institution's actual site. It works as a showcase of full-stack build capability and UI/UX judgment together, rather than one or the other.</p>
+        <p class="project__stack"><strong>Stack:</strong> React, Node.js, Express, MongoDB</p>
+        <a href="https://github.com/Mahisinha" target="_blank" rel="noopener" class="project__link">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements" class="achievements">
+    <div class="section-head">
+      <h2>Achievements &amp; certifications</h2>
+    </div>
+    <div class="achv__grid">
+      <div class="achv__col">
+        <ul>
+          <li>GATE Qualified — Computer Science &amp; Engineering</li>
+          <li>Golden Ticket — IIT Ropar NPTEL internship (1 of 3 in cohort)</li>
+          <li>Elected Class Representative</li>
+          <li>Top 2% nationally — Joy of Computing using Python (NPTEL)</li>
+          <li>Top 5% nationally — Fundamentals of Object-Oriented Programming (NPTEL)</li>
+        </ul>
+      </div>
+      <div class="achv__col">
+        <ul>
+          <li>Ethical Hacking Certification — EC-Council</li>
+          <li>C for Everyone Certification — University of California, Santa Cruz</li>
+          <li>IoT Certification — iHUB Divya Sampark</li>
+          <li>1st place, Intracollege Poetry Competition · 2nd place, Zonal Chess Competition</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WRITING ===== -->
+  <section id="writing" class="writing">
+    <div class="section-head">
+      <h2>Writing</h2>
+      <p>Outside code — I also write poetry, and placed 1st in my college's intracollege poetry competition.</p>
+    </div>
+
+    <div class="poem">
+      <h3 class="poem__title">One World</h3>
+      <p class="poem__body">This world… isn't it different?<br>
+Everything that begins has its end.<br>
+We are born just to die one day,<br>
+Thinking about the future—what about today?<br>
+Living, running, and keep going,<br>
+Either become the highest or keep bowing.<br>
+A world where people stay silent and money speaks,<br>
+Where monsters roam freely and angels sneak.<br>
+People keep the thorns and throw the rose,<br>
+The most important thing for one is their nose.<br>
+Where everyone wants you to fall, none wants you to rise,<br>
+One becomes happy in another's demise.<br>
+Everyone is ready to cut your wings,<br>
+So that they can pull your strings.<br>
+Where people are jealous of your growth,<br>
+But if you don't grow, they will taunt.<br>
+This world should be a happy place,<br>
+But well, that's not the case.<br>
+Fighting, screaming, and the sounds of guns,<br>
+Men biting men, dogs having fun.<br>
+Where death is the only peace,<br>
+Greed—the biggest disease.<br>
+Everything revolves around money,<br>
+You might think it's funny.<br>
+Please stop before this place is dead,<br>
+Close your eyes and open your head.<br>
+This place was meant to walk hand in hand,<br>
+Please stop before it turns into barren land.<br>
+Let's join hands with a smile on our face,<br>
+Come together to make this world a happy place.</p>
+      <span class="poem__by">— Mahi Sinha</span>
+    </div>
+
+    <div class="poem">
+      <h3 class="poem__title">Mother</h3>
+      <p class="poem__body">Mom, a word you can never define,<br>
+For how do you describe something divine?<br>
+She is not just a word, she is power,<br>
+A feeling—like a sudden meteor shower.<br>
+She is a world of peace and light,<br>
+A child's comfort, their safest sight.<br>
+Like God on Earth, pure and true,<br>
+She loved you before you ever knew.<br>
+When the world turns cold and unfair,<br>
+She is the one who's always there.<br>
+She is woven of love and trust so true,<br>
+Layer by layer, in every hue.<br>
+<br>
+A candle glowing in the dark,<br>
+For you, she'd fight—even a shark.<br>
+A feather soft in a world of thorns,<br>
+Healing your heart while hers is torn.<br>
+She is the air you breathe each day,<br>
+Without her, life would fade away.<br>
+An angel walking without wings,<br>
+The most beautiful of all living things.<br>
+Her love for us—we can't measure or view,<br>
+But all I know is… I love her too.</p>
+      <span class="poem__by">— Mahi Sinha</span>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="education">
+    <div class="section-head">
+      <h2>Education</h2>
+    </div>
+    <div class="edu__row">
+      <div class="edu__when">2023 – 2027</div>
+      <div class="edu__what">
+        <h3>B.Tech, Computer Science &amp; Engineering</h3>
+        <p>Bihar Engineering University — Purnea College of Engineering · CGPA 9.0 · Currently in 6th semester</p>
+      </div>
+    </div>
+    <div class="edu__row">
+      <div class="edu__when">2022 – 2023</div>
+      <div class="edu__what">
+        <h3>Intermediate (I.Sc)</h3>
+        <p>Millia Convent English Medium School · 88%</p>
+      </div>
+    </div>
+    <div class="edu__row">
+      <div class="edu__when">2020 – 2021</div>
+      <div class="edu__what">
+        <h3>Matriculation (10th)</h3>
+        <p>Millia Convent English Medium School · 86.8%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact">
+    <div class="contact__inner">
+      <h2>Let's talk.</h2>
+      <p>Open to Software Development, Full-Stack, and AI/ML roles — internships or full-time. The fastest way to reach me is email.</p>
+      <div class="contact__grid">
+        <a href="mailto:sinhamahi14092005@gmail.com" class="contact__item">
+          <span class="contact__label">Email</span>
+          <span class="contact__value">sinhamahi14092005@gmail.com</span>
+        </a>
+        <a href="tel:+916205316071" class="contact__item">
+          <span class="contact__label">Phone</span>
+          <span class="contact__value">+91 62053 16071</span>
+        </a>
+        <a href="https://linkedin.com/in/mahisinha" target="_blank" rel="noopener" class="contact__item">
+          <span class="contact__label">LinkedIn</span>
+          <span class="contact__value">linkedin.com/in/mahisinha</span>
+        </a>
+        <a href="https://github.com/Mahisinha" target="_blank" rel="noopener" class="contact__item">
+          <span class="contact__label">GitHub</span>
+          <span class="contact__value">github.com/Mahisinha</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>Mahi Sinha · Purnea, Bihar</span>
+    <span id="footerYear"></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
